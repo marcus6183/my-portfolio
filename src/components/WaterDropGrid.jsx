@@ -2,15 +2,6 @@ import anime from "animejs";
 import { motion } from "framer-motion";
 
 const WaterDropGrid = () => {
-    // const ref = useRef(null);
-    // const isInView = useInView(ref, { once: true });
-
-    // useEffect(() => {
-    //     console.log("Use Effect Called");
-    //     console.log(`Current value: ${isInView}`);
-    //     animate();
-    // }, [isInView]);
-
     const GRID_WIDTH = 25;
     const GRID_HEIGHT = 20;
 
