@@ -1,10 +1,14 @@
 import { TiArrowSortedDown } from "react-icons/ti";
+import WaterDropGrid from "./WaterDropGrid";
 
 const Hero = () => {
     return (
         <section name="home" className="h-screen w-full bg-neutral-900">
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6">
-                <div>
+            <div className="relative w-fit max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6">
+                <div className="absolute right-0">
+                    <WaterDropGrid />
+                </div>
+                <div className="z-[5]">
                     <h1 className="text-8xl font-bold">
                         Hey, I'm{" "}
                         <span className="animate-gradientText text-transparent bg-clip-text bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 inline-block ">
@@ -21,6 +25,7 @@ const Hero = () => {
                         background. Let's connect and explore how my skills can
                         contribute to your team's success.
                     </p>
+
                     <div>
                         <button className="group w-fit px-6 py-3 mt-6 rounded-md bg-cyan-400 text-black flex items-center">
                             Contact Me
