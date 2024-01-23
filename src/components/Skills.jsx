@@ -1,3 +1,4 @@
+import Reveal from "./Reveal";
 import Card from "./Card";
 import {
     FaHtml5,
@@ -91,14 +92,18 @@ const Skills = () => {
             name="skills"
             className="min-h-screen w-full bg-neutral-900 flex flex-col justify-center items-center"
         >
-            <h2 className="text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block mt-12 lg:mt-0">
-                Skills
-            </h2>
-            <div className="max-w-screen-2xl lg:gap-4 xl:gap-6 lg:flex">
-                {skillsArr.map((item, index) => (
-                    <Card key={index} data={item} />
-                ))}
-            </div>
+            <Reveal>
+                <h2 className="text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block mt-12 lg:mt-0">
+                    Skills
+                </h2>
+            </Reveal>
+            <Reveal>
+                <div className="max-w-screen-2xl lg:gap-4 xl:gap-6 lg:flex">
+                    {skillsArr.map((item, index) => (
+                        <Card key={index} data={item} />
+                    ))}
+                </div>
+            </Reveal>
         </section>
     );
 };

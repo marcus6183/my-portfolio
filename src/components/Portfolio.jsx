@@ -1,4 +1,5 @@
 import PortfolioCard from "./PortfolioCard";
+import Reveal from "./Reveal";
 
 const Portfolio = () => {
     const projects = [
@@ -19,17 +20,21 @@ const Portfolio = () => {
     return (
         <section
             name="portfolio"
-            className="min-h-screen w-full bg-neutral-900 pt-12"
+            className="min-h-screen w-full bg-neutral-900 flex items-center"
         >
-            <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6">
-                <h2 className="text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
-                    Portfolio
-                </h2>
-                <div className="grid lg:grid-cols-2 gap-8 px-12 sm:px-0 mb-10">
-                    {projects.map((project, index) => (
-                        <PortfolioCard key={index} project={project} />
-                    ))}
-                </div>
+            <div className="max-w-screen-lg h-full mx-auto flex flex-col items-center justify-center px-6 mt-8">
+                <Reveal>
+                    <h2 className="text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
+                        Portfolio
+                    </h2>
+                </Reveal>
+                <Reveal>
+                    <div className="grid lg:grid-cols-2 gap-8 sm:px-0 mb-10">
+                        {projects.map((project, index) => (
+                            <PortfolioCard key={index} project={project} />
+                        ))}
+                    </div>
+                </Reveal>
             </div>
         </section>
     );
