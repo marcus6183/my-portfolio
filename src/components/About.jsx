@@ -11,37 +11,61 @@ const About = () => {
                     </Reveal>
                     <Reveal>
                         <p className="text-xl text-neutral-400 max-w-3xl">
-                            Greetings! I'm Marcus Wong En Hao, a recent graduate
-                            fueled by a deep passion for web development. Beyond
-                            my academic achievements, my journey is marked by
-                            hands-on experiences, including an impactful
-                            internship where I implemented Python scripts and
-                            crafted a Chatbot prototype at NAIM Holdings Berhad.
+                            Greetings, I'm{" "}
+                            <span className="text-cyan-400 font-bold">
+                                Marcus
+                            </span>
+                            , a Fresh Graduate with a Bachelor's degree in ICT
+                            (Information and Communication Technology) and am
+                            fueled by a deep passion for web development.
                         </p>
                     </Reveal>
                     <br />
                     <Reveal>
                         <p className="text-xl text-neutral-400 max-w-3xl">
-                            What sets me apart is not just my technical prowess
-                            in HTML, CSS, JavaScript, Python, PHP, and MySQL,
+                            I love web development because it allows me to fully
+                            utilize my creativity and problem-solving skills.
+                            What sets me apart is not just my technical skills
                             but also my commitment to innovation and continuous
-                            improvement. I thrive on turning fresh ideas into
-                            tangible solutions and am on the lookout for
-                            opportunities to apply and expand my skills within
-                            the industry.
+                            improvement.
+                        </p>
+                    </Reveal>
+                    <br />
+                    <Reveal>
+                        {/* <p className="text-xl text-neutral-400 max-w-3xl">
+                            A quote by Newton D. Baker has inspired me:
+                        </p> */}
+                        {/* <br /> */}
+                        <p className="text-justify font-bold text-xl max-w-3xl animate-gradientText text-transparent bg-clip-text bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 inline-block">
+                            "The man who graduates today and stops learning
+                            tomorrow is uneducated the day after."
+                        </p>
+                        <br />
+                        <p className="text-right text-xl w-full text-neutral-500">
+                            - Newton D. Baker
                         </p>
                     </Reveal>
                     <br />
                     <Reveal>
                         <p className="text-xl text-neutral-400 max-w-3xl">
-                            {" "}
-                            In addition to my proficiency, my adaptability and
-                            problem-solving mindset make me a valuable asset to
-                            any team. Let's connect and explore how I can bring
-                            a blend of enthusiasm, innovation, and skills to
-                            contribute to your team's success.
+                            As an individual in the tech field, I wholeheartedly
+                            agree with this. Technology always moves forward;
+                            what is new today turns old the next day and will
+                            eventually be replaced or deprecated. Hence, I am
+                            dedicated to keeping up with the latest trends,
+                            learning new things, and consistently increasing my
+                            skillset to stay relevant in this ever-evolving
+                            field.{" "}
                         </p>
                     </Reveal>
+                    {/* <br />
+                    <Reveal>
+                        <p className="text-xl text-neutral-400 max-w-3xl">
+                            Let's connect and explore how I can bring a blend of
+                            enthusiasm, innovation, and skills to contribute to
+                            your team's success.{" "}
+                        </p>
+                    </Reveal> */}
                 </div>
             </div>
         </section>
