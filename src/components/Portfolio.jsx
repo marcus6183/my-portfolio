@@ -4,6 +4,18 @@ import Reveal from "./Reveal";
 const Portfolio = () => {
     const projects = [
         {
+            thumbnailPath: "/portfolio-website.png",
+            projectName: "My Portfolio",
+            githubURL: "https://github.com/marcus6183/KPI-Management-System",
+            techStack: [
+                "React",
+                "Vite",
+                "Tailwind",
+                "Framer Motion",
+                "AnimeJS",
+            ],
+        },
+        {
             thumbnailPath: "/carrot-keebs-thumbnail.png",
             projectName: "Carrotkeebs",
             githubURL:
