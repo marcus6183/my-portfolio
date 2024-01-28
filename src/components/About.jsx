@@ -1,4 +1,6 @@
 import Reveal from "./Reveal";
+import Marquee from "react-fast-marquee";
+
 const About = () => {
     return (
         <section name="about" className="h-screen w-full bg-neutral-900">
@@ -15,7 +17,7 @@ const About = () => {
                             <span className="text-cyan-400 font-bold">
                                 Marcus
                             </span>
-                            , a Fresh Graduate with a Bachelor's degree in ICT
+                            , a fresh graduate with a Bachelor's degree in ICT
                             (Information and Communication Technology) and am
                             fueled by a deep passion for web development.
                         </p>
@@ -32,18 +34,17 @@ const About = () => {
                     </Reveal>
                     <br />
                     <Reveal>
-                        {/* <p className="text-xl text-neutral-400 max-w-3xl">
-                            A quote by Newton D. Baker has inspired me:
-                        </p> */}
-                        {/* <br /> */}
-                        <p className="text-justify font-bold text-xl max-w-3xl animate-gradientText text-transparent bg-clip-text bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 inline-block">
-                            "The man who graduates today and stops learning
-                            tomorrow is uneducated the day after."
-                        </p>
-                        <br />
-                        <p className="text-right text-xl w-full text-neutral-500">
-                            - Newton D. Baker
-                        </p>
+                        <Marquee
+                            className="max-w-3xl"
+                            pauseOnHover="true"
+                            delay={1}
+                        >
+                            <div className="font-medium text-xl mx-10 animate-gradientText text-transparent bg-clip-text bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500">
+                                "The man who graduates today and stops learning
+                                tomorrow is uneducated the day after." - Newton
+                                D. Baker
+                            </div>
+                        </Marquee>
                     </Reveal>
                     <br />
                     <Reveal>
@@ -58,14 +59,6 @@ const About = () => {
                             field.{" "}
                         </p>
                     </Reveal>
-                    {/* <br />
-                    <Reveal>
-                        <p className="text-xl text-neutral-400 max-w-3xl">
-                            Let's connect and explore how I can bring a blend of
-                            enthusiasm, innovation, and skills to contribute to
-                            your team's success.{" "}
-                        </p>
-                    </Reveal> */}
                 </div>
             </div>
         </section>
