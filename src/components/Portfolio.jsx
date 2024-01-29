@@ -6,7 +6,7 @@ const Portfolio = () => {
         {
             thumbnailPath: "/portfolio-website.png",
             projectName: "My Portfolio",
-            githubURL: "https://github.com/marcus6183/KPI-Management-System",
+            githubURL: "https://github.com/marcus6183",
             techStack: [
                 "React",
                 "Vite",
@@ -55,6 +55,7 @@ const Portfolio = () => {
                             className="text-white hover:text-cyan-400 duration-200"
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label="Link to Notion portfolio"
                         >
                             here
                         </a>

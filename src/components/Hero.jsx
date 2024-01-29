@@ -37,6 +37,7 @@ const Hero = () => {
                     <Reveal>
                         <div>
                             <Link
+                                href="#contactMe"
                                 to="contactMe"
                                 smooth
                                 duration={500}

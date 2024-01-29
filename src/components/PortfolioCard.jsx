@@ -7,20 +7,11 @@ const PortfolioCard = (props) => {
         <div
             className={`${styles.card} rounded-xl overflow-hidden flex justify-center flex-wrap group max-w-[28rem] h-fit`}
         >
-            {/* Thumbnail Container */}
-            {/* <div className="w-full h-56 rounded-t-xl flex items-end justify-center px-4 overflow-hidden">
-                    <div className="overflow-hidden rounded-t-lg group-hover:scale-105 group-hover:-rotate-1 duration-200 ease-in-out">
-                        <img
-                            className="w-full h-full object-cover"
-                            src={project.thumbnailPath}
-                            alt=""
-                        />
-                    </div>
-                </div> */}
             <div className="w-full h-56 flex justify-center items-end px-8 pt-8 overflow-hidden">
                 <img
                     className="w-full h-full object-cover rounded-t-lg group-hover:scale-105 group-hover:-rotate-1 duration-200 ease-in-out"
                     src={project.thumbnailPath}
+                    alt={`${project.projectName}-img`}
                 />
             </div>
             {/* Project Title and GitHub link */}
@@ -33,6 +24,7 @@ const PortfolioCard = (props) => {
                     href={project.githubURL}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Link to GitHub repository"
                 >
                     <FaGithub
                         className="text-neutral-500 hover:text-white duration-200"

@@ -15,17 +15,23 @@ const NavBar = () => {
         // <section className="flex justify-end md:justify-center fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10">
         <section className="flex justify-between fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10">
             <Link
+                href="#home"
                 to="home"
                 smooth
                 duration={500}
                 className="cursor-pointer w-32 pl-2"
             >
-                <img src="/my-logo.svg" width="60" />
+                <img src="/my-logo.svg" alt="my-logo" width="60" />
             </Link>
             <ul className="hidden lg:flex">
                 {navItems.map((item, index) => (
                     <li key={index}>
-                        <Link to={item.nameRef} smooth duration={500}>
+                        <Link
+                            href={`#${item.nameRef}`}
+                            to={item.nameRef}
+                            smooth
+                            duration={500}
+                        >
                             <p className="px-8 cursor-pointer font-medium text-white bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 bg-clip-text hover:text-transparent duration-300">
                                 {item.displayText}
                             </p>

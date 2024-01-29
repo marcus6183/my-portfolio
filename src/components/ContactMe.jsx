@@ -39,6 +39,7 @@ const ContactMe = () => {
                                 href="https://github.com/marcus6183"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="Link to my GitHub profile"
                             >
                                 <FaGithub
                                     size={30}
@@ -49,6 +50,7 @@ const ContactMe = () => {
                                 href="https://linkedin.com/in/marcusw6183"
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                aria-label="Link to my LinkedIn profile"
                             >
                                 <FaLinkedin
                                     size={30}
