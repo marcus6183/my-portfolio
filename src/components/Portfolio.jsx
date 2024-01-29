@@ -49,7 +49,7 @@ const Portfolio = () => {
                 </Reveal>
                 <Reveal>
                     <p className="text-xl text-neutral-400 max-w-lg">
-                        Feel free to explore my other projects{" "}
+                        Feel free to explore{" "}
                         <a
                             href="https://marcusw6183.notion.site/marcusw6183/My-Other-Course-Works-c5d631bf951041ac850cfd4e96d0e108"
                             className="text-white hover:text-cyan-400 duration-200"
@@ -57,7 +57,7 @@ const Portfolio = () => {
                             rel="noopener noreferrer"
                             aria-label="Link to Notion portfolio"
                         >
-                            here
+                            my other projects
                         </a>
                         !
                     </p>
