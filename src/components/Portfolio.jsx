@@ -5,6 +5,7 @@ const Portfolio = () => {
     const projects = [
         {
             thumbnailPath: "/portfolio-website.webp",
+            thumbnailPathSM: "/portfolio-website-sm.webp",
             projectName: "My Portfolio",
             githubURL: "https://github.com/marcus6183",
             techStack: [
@@ -17,6 +18,7 @@ const Portfolio = () => {
         },
         {
             thumbnailPath: "/carrot-keebs-thumbnail.webp",
+            thumbnailPathSM: "/carrot-keebs-thumbnail-sm.webp",
             projectName: "Carrotkeebs",
             githubURL:
                 "https://github.com/marcus6183/COS30043-Custom-Web-Application",
@@ -24,6 +26,7 @@ const Portfolio = () => {
         },
         {
             thumbnailPath: "/KPI-Management-System.webp",
+            thumbnailPathSM: "/KPI-Management-System-sm.webp",
             projectName: "KPI-System",
             githubURL: "https://github.com/marcus6183/KPI-Management-System",
             techStack: ["PHP", "MySQL"],

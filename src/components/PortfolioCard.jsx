@@ -10,7 +10,7 @@ const PortfolioCard = (props) => {
             <div className="w-full h-56 flex justify-center items-end px-8 pt-8 overflow-hidden">
                 <img
                     className="w-full h-full object-cover rounded-t-lg group-hover:scale-105 group-hover:-rotate-1 duration-200 ease-in-out"
-                    src={project.thumbnailPath}
+                    src={project.thumbnailPathSM}
                     alt={`${project.projectName}-img`}
                     loading="lazy"
                 />

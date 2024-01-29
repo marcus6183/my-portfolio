@@ -20,12 +20,7 @@ const NavBar = () => {
                 duration={500}
                 className="cursor-pointer w-32 pl-2"
             >
-                <img
-                    src="/my-logo.svg"
-                    alt="my-logo"
-                    width="60"
-                    height="auto"
-                />
+                <img src="/my-logo.svg" alt="my-logo" className="w-14 h-auto" />
             </Link>
             <ul className="hidden lg:flex">
                 {navItems.map((item, index) => (
