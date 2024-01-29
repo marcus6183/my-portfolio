@@ -35,7 +35,7 @@ const NavBar = () => {
             </ul>
             <div className="w-32 flex justify-center">
                 <a
-                    href="/documents/marcus_wong_resume.pdf"
+                    href="/documents/Marcus_Wong-Resume.pdf"
                     download
                     className="w-fit px-3 py-1 rounded-md border-2 border-cyan-400 text-cyan-400 box-border hover:bg-cyan-400 hover:text-black duration-300 ease-in-out lg:flex items-center hidden cursor-pointer"
                 >
@@ -66,7 +66,7 @@ const NavBar = () => {
                         </li>
                     ))}
                     <li>
-                        <a href="/documents/marcus_wong_resume.pdf" download>
+                        <a href="/documents/Marcus_Wong-Resume.pdf" download>
                             <p className="cursor-pointer py-8 text-4xl text-white bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 bg-clip-text hover:text-transparent duration-300">
                                 My Resume
                             </p>
