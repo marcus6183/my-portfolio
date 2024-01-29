@@ -12,6 +12,7 @@ const PortfolioCard = (props) => {
                     className="w-full h-full object-cover rounded-t-lg group-hover:scale-105 group-hover:-rotate-1 duration-200 ease-in-out"
                     src={project.thumbnailPath}
                     alt={`${project.projectName}-img`}
+                    loading="lazy"
                 />
             </div>
             {/* Project Title and GitHub link */}

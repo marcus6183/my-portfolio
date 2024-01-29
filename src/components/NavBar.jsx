@@ -12,7 +12,6 @@ const NavBar = () => {
         { displayText: "Contact Me", nameRef: "contactMe" },
     ];
     return (
-        // <section className="flex justify-end md:justify-center fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10">
         <section className="flex justify-between fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10">
             <Link
                 href="#home"
@@ -21,7 +20,12 @@ const NavBar = () => {
                 duration={500}
                 className="cursor-pointer w-32 pl-2"
             >
-                <img src="/my-logo.svg" alt="my-logo" width="60" />
+                <img
+                    src="/my-logo.svg"
+                    alt="my-logo"
+                    width="60"
+                    height="auto"
+                />
             </Link>
             <ul className="hidden lg:flex">
                 {navItems.map((item, index) => (

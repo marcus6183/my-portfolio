@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 const Portfolio = () => {
     const projects = [
         {
-            thumbnailPath: "/portfolio-website.png",
+            thumbnailPath: "/portfolio-website.webp",
             projectName: "My Portfolio",
             githubURL: "https://github.com/marcus6183",
             techStack: [
@@ -16,14 +16,14 @@ const Portfolio = () => {
             ],
         },
         {
-            thumbnailPath: "/carrot-keebs-thumbnail.png",
+            thumbnailPath: "/carrot-keebs-thumbnail.webp",
             projectName: "Carrotkeebs",
             githubURL:
                 "https://github.com/marcus6183/COS30043-Custom-Web-Application",
             techStack: ["Vue", "Bootstrap", "Firebase"],
         },
         {
-            thumbnailPath: "/KPI-Management-System.png",
+            thumbnailPath: "/KPI-Management-System.webp",
             projectName: "KPI-System",
             githubURL: "https://github.com/marcus6183/KPI-Management-System",
             techStack: ["PHP", "MySQL"],
