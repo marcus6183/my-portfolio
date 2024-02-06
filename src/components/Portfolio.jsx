@@ -7,14 +7,8 @@ const Portfolio = () => {
             thumbnailPath: "/portfolio-website.webp",
             thumbnailPathSM: "/portfolio-website-sm.webp",
             projectName: "My Portfolio",
-            githubURL: "https://github.com/marcus6183",
-            techStack: [
-                "React",
-                "Vite",
-                "Tailwind",
-                "Framer Motion",
-                "AnimeJS",
-            ],
+            githubURL: "https://github.com/marcus6183/my-portfolio",
+            techStack: ["React", "Vite", "Tailwind"],
         },
         {
             thumbnailPath: "/carrot-keebs-thumbnail.webp",
