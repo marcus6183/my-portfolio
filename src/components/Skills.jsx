@@ -93,7 +93,7 @@ const Skills = () => {
             className="min-h-screen w-full bg-neutral-900 flex flex-col justify-center items-center"
         >
             <Reveal>
-                <h2 className="text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block mt-12 lg:mt-0">
+                <h2 className="text-5xl md:text-6xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block mt-12 lg:mt-0">
                     Skills
                 </h2>
             </Reveal>

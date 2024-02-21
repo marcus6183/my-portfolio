@@ -25,7 +25,7 @@ const Card = (props) => {
             <div className="flex flex-col items-center p-2">
                 <div className="w-full h-24 flex items-center justify-center mb-2">
                     <h1
-                        className={`text-4xl text-center font-bold text-transparent inline-block bg-clip-text bg-gradient-to-br ${data.bgClass} animate-gradientText`}
+                        className={`text-3xl md:text-4xl text-center font-bold text-transparent inline-block bg-clip-text bg-gradient-to-br ${data.bgClass} animate-gradientText`}
                     >
                         {data.skill}
                     </h1>

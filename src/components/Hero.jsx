@@ -12,7 +12,7 @@ const Hero = () => {
                 </div>
                 <div className="z-[5]">
                     <Reveal>
-                        <h1 className="text-8xl font-bold">
+                        <h1 className="text-7xl md:text-8xl font-bold">
                             Hey, I'm{" "}
                             <span className="animate-gradientText text-transparent bg-clip-text bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 inline-block ">
                                 Marcus
@@ -20,7 +20,7 @@ const Hero = () => {
                         </h1>
                     </Reveal>
                     <Reveal>
-                        <h2 className="text-4xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
+                        <h2 className="text-3xl md:text-4xl font-bold py-6 text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
                             Aspiring Web Developer
                         </h2>
                     </Reveal>

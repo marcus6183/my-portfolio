@@ -8,7 +8,7 @@ const ContactMe = () => {
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-6">
                 <div className="w-full flex flex-col items-center text-center gap-4">
                     <Reveal>
-                        <h2 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
+                        <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white via-stone-300 to-stone-500 inline-block">
                             Contact
                         </h2>
                     </Reveal>
