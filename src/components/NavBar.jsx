@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion, AnimatePresence } from "framer-motion";
+import NavBarOverlay from "./NavBarOverlay";
 
 const NavBar = () => {
     const [showNav, setShowNav] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const navItems = [
         { displayText: "Home", nameRef: "home" },
         { displayText: "About", nameRef: "about" },
@@ -11,8 +14,27 @@ const NavBar = () => {
         { displayText: "Portfolio", nameRef: "portfolio" },
         { displayText: "Contact Me", nameRef: "contactMe" },
     ];
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => {
+            window.removeEventListener("resize", handleWindowResize);
+        };
+    }, []);
+    useEffect(() => {
+        windowWidth > 1024 && setShowNav(false);
+    }, [windowWidth]);
     return (
-        <section className="flex justify-between fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10">
+        <motion.section
+            initial={{ y: -48 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="flex justify-between fixed items-center w-full h-12 bg-neutral-900 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 border-b border-b-neutral-800 z-10"
+        >
             <Link
                 href="#home"
                 to="home"
@@ -54,32 +76,10 @@ const NavBar = () => {
             >
                 {showNav ? <FaTimes size={30} /> : <FaBars size={30} />}
             </div>
-            {showNav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-neutral-900 z-10 lg:hidden">
-                    {navItems.map((item, index) => (
-                        <li key={index}>
-                            <Link
-                                to={item.nameRef}
-                                smooth
-                                duration={500}
-                                onClick={() => setShowNav(!showNav)}
-                            >
-                                <p className="cursor-pointer py-8 text-4xl text-white bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 bg-clip-text hover:text-transparent duration-300">
-                                    {item.displayText}
-                                </p>
-                            </Link>
-                        </li>
-                    ))}
-                    <li>
-                        <a href="/documents/Marcus_Wong-Resume.pdf" download>
-                            <p className="cursor-pointer py-8 text-4xl text-white bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 bg-clip-text hover:text-transparent duration-300">
-                                My Resume
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            )}
-        </section>
+            <AnimatePresence>
+                {showNav && <NavBarOverlay navItems={navItems} />}
+            </AnimatePresence>
+        </motion.section>
     );
 };
 
