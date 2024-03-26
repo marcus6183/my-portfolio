@@ -62,7 +62,7 @@ const NavBar = () => {
             </ul>
             <div className="w-32 flex justify-center">
                 <a
-                    href="/documents/Marcus_Wong-Resume.pdf"
+                    href="/documents/Marcus_Wong_Resume.pdf"
                     download
                     className="w-fit px-3 py-1 rounded-md border-2 border-cyan-400 text-cyan-400 box-border hover:bg-cyan-400 hover:text-black duration-300 ease-in-out lg:flex items-center hidden cursor-pointer"
                 >

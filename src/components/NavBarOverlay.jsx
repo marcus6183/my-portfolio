@@ -55,7 +55,7 @@ const NavBarOverlay = ({ navItems }) => {
                 </li>
             ))}
             <li className="opacity-0">
-                <a href="/documents/Marcus_Wong-Resume.pdf" download>
+                <a href="/documents/Marcus_Wong_Resume.pdf" download>
                     <p className="cursor-pointer py-8 text-4xl text-white bg-gradient-to-r from-emerald-100 via-cyan-400 to-blue-500 bg-clip-text hover:text-transparent duration-300">
                         My Resume
                     </p>
